@@ -1,0 +1,73 @@
+@import "fonts.sass"
+//Шрифт по умолчанию
+$fontfamily: 'Geometria'
+//Размер шрифта по умолчанию
+$fontsize: 14
+
+//Переменные
+$minwidth: 1200
+$mw: 1600
+$md1: 642
+$md2: 322
+
+
+//Обнуление, общие параметры
+*
+	padding: 0px
+	margin: 0px
+	border: 0px
+*, *:before, *:active
+	box-sizing: border-box
+*:focus, :active, :focus
+	outline: none
+a:focus, a:active
+	outline: none
+nav, footer, header, aside, section
+	display: block
+html, body 
+	height: 100%
+	margin: 0px
+	padding: 0px
+	min-width: $minwidth+px
+	position: relative
+	width: 100%
+	color: #000
+body
+	font-size: 100%
+	line-height: 1
+	font-size: $fontsize
+	font-family: $fontfamily
+	&.lock
+		overflow: hidden
+input, button, textarea
+	font-family: $fontfamily
+input::-ms-clear
+	display: none
+button
+	cursor: pointer
+button::-moz-focus-inner
+	padding: 0
+	border: 0
+a, a:hover, a:visited
+	text-decoration: none
+ul, li
+	list-style: none
+img
+	vertical-align: top
+h1, h2, h3, h4, h5, h6
+	font-size: inherit
+	font-weight: inherit
+.container
+	max-width: $mw+px
+	margin: 0 auto
+	width: 100%
+	@media (max-width: $md1+px)		
+		max-width: 640px
+	@media (max-width: $md2+px)
+		max-width: 320px
+.wrapper
+	width: 100%
+	min-height: 100%
+	overflow: hidden
+	&.loaded
+
