@@ -22,6 +22,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Geometria Light';
+  src: url("/app/fonts/Geometria-Light.eot");
+  src: url("/app/fonts/Geometria-Light.eot?#iefix") format("embedded-opentype"), url("/app/fonts/Geometria-Light.woff") format("woff"), url("/app/fonts/Geometria-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -49,7 +57,7 @@ html, body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  min-width: 1200px;
+  min-width: 320px;
   position: relative;
   width: 100%;
   color: #000;
@@ -122,6 +130,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   min-height: 100%;
   overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .menu {
@@ -198,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .center__list a {
-  font-family: Geometria;
+  font-family: 'Geometria Regular';
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -269,4 +282,346 @@ a:focus ~ .bgactive::before {
   line-height: 28px;
   padding: 0 0 0 10px;
   color: #0B0B0B;
+}
+
+.background {
+  background: -webkit-linear-gradient(269.82deg, rgba(0, 26, 51, 0) 66.21%, rgba(0, 26, 51, 0.8) 99.84%), -webkit-linear-gradient(bottom, rgba(0, 27, 52, 0.6), rgba(0, 27, 52, 0.6)), url("/app/img/bg.jpg") no-repeat center center;
+  background: -o-linear-gradient(269.82deg, rgba(0, 26, 51, 0) 66.21%, rgba(0, 26, 51, 0.8) 99.84%), -o-linear-gradient(bottom, rgba(0, 27, 52, 0.6), rgba(0, 27, 52, 0.6)), url("/app/img/bg.jpg") no-repeat center center;
+  background: linear-gradient(180.18deg, rgba(0, 26, 51, 0) 66.21%, rgba(0, 26, 51, 0.8) 99.84%), linear-gradient(0deg, rgba(0, 27, 52, 0.6), rgba(0, 27, 52, 0.6)), url("/app/img/bg.jpg") no-repeat center center;
+  background-size: 100%;
+  height: 488px;
+}
+
+.mainscreen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.mainscreen__text {
+  margin: 110px 0 0 0;
+}
+
+.mainscreen__text h1 {
+  font-family: Geometria Bold;
+  text-align: center;
+  font-size: 44px;
+  line-height: 55px;
+  letter-spacing: 0.015em;
+  color: #FFFFFF;
+}
+
+.mainscreen__text p {
+  font-family: Geometria Regular;
+  text-align: center;
+  font-size: 18px;
+  line-height: 156.46%;
+  color: #FFFFFF;
+}
+
+.mainscreen__from {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background-color: #f4f8ff;
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 0 72px;
+  margin: 321px 0 0 0;
+}
+
+.mainscreen__from h1 {
+  width: 100%;
+  position: relative;
+  z-index: 111;
+  padding: 34px 0 25px 0;
+  font-family: Geometria Medium;
+  font-size: 22px;
+  line-height: 28px;
+  color: #001A33;
+}
+
+.mainscreen__from span {
+  color: #4169C1;
+}
+
+.main__bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/app/img/rel.png") no-repeat center right;
+  opacity: 0.1;
+}
+
+.form__mess {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+  z-index: 1111;
+}
+
+.form__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2px 21px 0 0;
+}
+
+.form__input label {
+  font-family: Geometria Light;
+  font-size: 14px;
+  line-height: 18px;
+  color: #001A33;
+}
+
+.form__input input {
+  width: 235px;
+  height: 45px;
+  background: #FFFFFF;
+  border: 1px solid #E7ECF3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.form__button {
+  width: 235px;
+  height: 50px;
+  margin: 0 0 0 31px;
+  font-family: Geometria Bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  background-color: #FD6612;
+  border-radius: 23.5px;
+}
+
+.geografy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 130px 0 0 0;
+}
+
+.geografy__text {
+  width: 483px;
+}
+
+.geografy__text h1 {
+  font-family: Geometria Medium;
+  font-size: 35px;
+  line-height: 44px;
+  color: #001A33;
+}
+
+.geografy__text h2 {
+  font-family: Geometria Regular;
+  font-size: 22px;
+  line-height: 150.52%;
+  margin: 23px 0 20px 0;
+  color: #001A33;
+}
+
+.geografy__text p {
+  font-family: Geometria Regular;
+  font-size: 16px;
+  line-height: 156.46%;
+  color: rgba(0, 26, 51, 0.7);
+}
+
+.geografy__map {
+  width: 724px;
+  height: 455px;
+  margin: 0 0 64px 0;
+}
+
+.portfolio {
+  position: relative;
+  height: 744px;
+}
+
+.portfolio::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F4F8FF;
+}
+
+.portfolio h1 {
+  font-family: Geometria Medium;
+  position: relative;
+  font-size: 35px;
+  line-height: 44px;
+  z-index: 5;
+  text-align: center;
+  padding: 71px 0 38px 0;
+  color: #001A33;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 72px;
+}
+
+.content__rec {
+  width: 645px;
+  height: 450px;
+  background: #4169C1;
+}
+
+.content__rec > h1 {
+  font-family: Geometria Medium;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: left;
+  margin: 0 0 17px 30px;
+  padding: 0;
+  color: #FFFFFF;
+}
+
+.rec__head h1 {
+  font-family: Geometria Medium;
+  font-size: 22px;
+  line-height: 28px;
+  padding: 0;
+  text-align: left;
+  color: #FFFFFF;
+  padding: 40px 0 9px 30px;
+}
+
+.rec__head p {
+  font-family: Geometria Regular;
+  font-size: 16px;
+  line-height: 156.46%;
+  padding: 0 0 0 30px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.rec__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 30px;
+}
+
+.body__check-left {
+  margin: 0 35px 0 0;
+}
+
+.check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Geometria Regular;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 17px 0;
+  color: #FFFFFF;
+}
+
+.check p {
+  margin: 0 0 0 5px;
+}
+
+.sendmsg {
+  margin: 40px 0 0 32px;
+  width: 410px;
+  height: 70px;
+  font-family: Geometria Bold;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #FD6612;
+  border-radius: 37.5px;
+}
+
+.carousel-control-prev-icon {
+  position: absolute;
+  left: 0;
+  width: 26px;
+  height: 58px;
+  background-image: url("/app/img/prew.png");
+}
+
+.carousel-control-next-icon {
+  position: absolute;
+  right: 0;
+  width: 26px;
+  height: 58px;
+  background-image: url("/app/img/next.png");
+}
+
+.advantages__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__img {
+  position: relative;
+  margin: 0 42px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.card__img::after {
+  content: '';
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: url("/app/img/Ellipse.png") no-repeat top;
+  left: 0;
+  top: 0;
+}
+
+.card__img img {
+  vertical-align: middle;
 }
