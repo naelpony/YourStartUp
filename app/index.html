@@ -9,6 +9,7 @@
 		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/app/css/min/style.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 	<title>YourStartUp</title>
 </head>
 
@@ -56,15 +57,15 @@
 							<form action="" class="form__mess">
 								<div class="form__input">
 									<label for="">Имя</label>
-									<input type="text">
+									<input type="text" placeholder="Михаил">
 								</div>
 								<div class="form__input">
 									<label for="">Телефон</label>
-									<input id="phone" type="tel">
+									<input id="phone" type="tel" placeholder="8 (800) 535 35 35">
 								</div>
 								<div class="form__input">
 									<label for="">Почта</label>
-									<input type="email">
+									<input type="email" placeholder="company@mail.com">
 								</div>
 								<button type="submit" class="form__button">Оправить</button>
 							</form>
@@ -198,8 +199,8 @@
 						<div class="card__section">
 							<div class="card__content">
 								<div class="card__img">
-									<span></span>
 									<img src="/app/img/Money.png" alt="">
+									<span></span>
 								</div>
 								<div class="card__text">
 									<h1>Экономия стредств</h1>
@@ -273,15 +274,121 @@
 					</div>
 				</div>
 			</div>
+			<!--ABOUT-->
+			<div class="aboutbg">
+				<div class="container">
+					<div class="about">
+						<h1>О нашей компании</h1>
+						<div class="about__content">
+							<div class="about__rec">
+								<h1>Компания ООО”<span>railroad</span>”</h1>
+								<p>Оказывает широкий спектр услуг по строительству и ремонту железнодорожных путей, Ремонт
+									железнодорожных
+									тупиков,
+									стрелочных переводов, переездов. Опытные сотрудники, наличие необходимого оборудования позволяет в
+									кратчайшие сроки
+									выполнить работы любой сложности качественно и в кратчайшие сроки. Гибкая ценовая политика, наличие
+									СРО.
+									Подбор
+									материалов от новых до Б/У от партнёров.</p>
+								<div class="rec__img">
+									<a data-fancybox="single" data-src="/app/img/full1.jpg">
+										<img src="/app/img/doc0001.png" />
+									</a>
+									<a data-fancybox="single" data-src="/app/img/full2.jpg">
+										<img src="/app/img/doc0002.png" />
+									</a>
+								</div>
+								<div class="rec__bg"></div>
+							</div>
+							<div class="about__img">
+								<img src="/app/img/rolljpg.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer>
-
+			<div class="footerbg">
+				<div class="container">
+					<div class="footer">
+						<div class="footer__contacts">
+							<h1>Контакты</h1>
+							<div class="contacts__number">
+								<h1>Телефон:</h1>
+								<div class="number__tel">
+									<p>8(902)272-93-14</p>
+									<p>8(982)178-03-07</p>
+								</div>
+							</div>
+							<div class="contacts__email">
+								<h1>E-mail:</h1>
+								<p>nasvaniye@mail.ru</p>
+							</div>
+							<div class="contacts__adress">
+								<h1>Адрес:</h1>
+								<p>г. Екатеринбург, ул.<br> Колмогорова, дом 67</p>
+							</div>
+							<h2>ООО "railroad"</h2>
+							<div class="contacts__icon">
+								<a href=""><i class="fab fa-whatsapp"></i></a>
+								<a href=""><i class="fas fa-phone-alt"></i></a>
+								<a href=""><i class="far fa-envelope"></i></a>
+							</div>
+						</div>
+						<div class="footer__form">
+							<h1>Остались вопросы?</h1>
+							<form action="" class="form__ff">
+								<div class="form__left">
+									<div class="input__footer">
+										<label for="">Имя</label>
+										<input type="text" placeholder="Михаил">
+									</div>
+									<div class="input__footer">
+										<label for="">Телефон</label>
+										<input id="phonef" type="tel" placeholder="8 (800) 535 35 35">
+									</div>
+									<div class="input__footer">
+										<label for="">Почта</label>
+										<input type="email" placeholder="company@mail.com">
+									</div>
+									<div class="form-check">
+										<input type="checkbox" class="form-check-input" id="exampleCheck1">
+										<label class="form-check-label" for="exampleCheck1">Даю свое согласие<br>
+											с <a href="#">политикой конфиденциальности</a></label>
+									</div>
+								</div>
+								<div class="form__right">
+									<div class="input__footer">
+										<label for="">Комментарий</label>
+										<textarea name="" id="" placeholder="Напишите ваш вопрос..."></textarea>
+									</div>
+									<button type="" class="btnsend">ОТПРАВИТЬ</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="defendbg">
+				<div class="container">
+					<div class="defend">
+						<p>Все права защищены.</p>
+						<div class="defend__ysu">
+							<img src="/app/img/Group.png" alt="">
+							<a href="#">Разработка сайта - студия “ТвойСтартап”</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</div>
 
 </body>
 <script src="/app/js/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
 <script src="/app/js/jquery.maskedinput.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="https://kit.fontawesome.com/bc1ee98301.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
 	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
