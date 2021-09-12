@@ -10,6 +10,6 @@ $(function () {
 
 $('.menu__burger').on('click', function(event){
 	$('.menu__burger, .menu-center').toggleClass('active');
-	$('body').toggleClass('lock')
+	$('body').toggleClass('lock');
 });
 
