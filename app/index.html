@@ -3,12 +3,14 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/app/css/min/style.min.css">
+	<link rel="stylesheet" type="text/css" href="/app/css/min/media.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 	<title>YourStartUp</title>
 </head>
@@ -41,19 +43,24 @@
 						<img src="/app/img/PhoneCall.svg" alt="">
 						<h1>8(902)272-93-14</h1>
 					</div>
+					<div class="menu__burger">
+						<span></span>
+					</div>
 				</div>
 			</div>
 			<div class="background">
 				<div class="container">
 					<div class="mainscreen">
 						<div class="mainscreen__text">
-							<h1>Услуги по строительству<br>
+							<h1 class="png">Услуги по строительству<br>
 								и ремонту железнодорожных путей</h1>
+							<h1 class="jpg">Услуги по строительству<br>
+								и ремонту Ж/Д путей</h1>
 							<p>Компания проводит строительные и ремонтные работы на<br>
 								территории более чем 20 субъектов Российской Федерации</p>
 						</div>
 						<div class="mainscreen__from">
-							<h1>Оставьте заявку на <span>бесплатную</span> консультацию</h1>
+							<h1>Оставьте заявку на <br><span>бесплатную</span> консультацию</h1>
 							<form action="" class="form__mess">
 								<div class="form__input">
 									<label for="">Имя</label>
@@ -105,7 +112,8 @@
 							<div class="carousel-item active">
 								<div class="content">
 									<div class="content__pic">
-										<img src="/app/img/portfpng.png" alt="">
+										<img src="/app/img/portfpng.png" alt="" class="png">
+										<img src="/app/img/portfpng.jpg" alt="" class="jpg">
 									</div>
 									<div class="content__rec">
 										<div class="rec__head">
@@ -174,7 +182,8 @@
 										<button type="submit" class="sendmsg">Оставить заявку</button>
 									</div>
 									<div class="content__pic">
-										<img src="/app/img/portfpng.png" alt="">
+										<img src="/app/img/portfpng.png" alt="" class="png">
+										<img src="/app/img/portfpng.jpg" alt="" class="jpg">
 									</div>
 								</div>
 
@@ -302,10 +311,13 @@
 								<div class="rec__bg"></div>
 							</div>
 							<div class="about__img">
-								<img src="/app/img/rolljpg.jpg" alt="">
+								<img src="/app/img/rolljpg.jpg" alt="" class="png">
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="about__img">
+					<img src="/app/img/rolljpg.jpg" alt="" class="jpg">
 				</div>
 			</div>
 		</main>
@@ -353,7 +365,7 @@
 										<label for="">Почта</label>
 										<input type="email" placeholder="company@mail.com">
 									</div>
-									<div class="form-check">
+									<div class="form-check png">
 										<input type="checkbox" class="form-check-input" id="exampleCheck1">
 										<label class="form-check-label" for="exampleCheck1">Даю свое согласие<br>
 											с <a href="#">политикой конфиденциальности</a></label>
@@ -365,6 +377,11 @@
 										<textarea name="" id="" placeholder="Напишите ваш вопрос..."></textarea>
 									</div>
 									<button type="" class="btnsend">ОТПРАВИТЬ</button>
+									<div class="form-check jpg">
+										<input type="checkbox" class="form-check-input" id="exampleCheck1">
+										<label class="form-check-label" for="exampleCheck1">Даю свое согласие<br>
+											с <a href="#">политикой конфиденциальности</a></label>
+									</div>
 								</div>
 							</form>
 						</div>
@@ -377,7 +394,7 @@
 						<p>Все права защищены.</p>
 						<div class="defend__ysu">
 							<img src="/app/img/Group.png" alt="">
-							<a href="#">Разработка сайта - студия “ТвойСтартап”</a>
+							<a href="#">Разработка сайта<br> - студия “ТвойСтартап”</a>
 						</div>
 					</div>
 				</div>
